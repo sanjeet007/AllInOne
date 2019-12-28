@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    tools:context=".SplashActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CV_fb"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="50dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:padding="3dp"
+            android:layout_height="100dp"
+            android:src="@drawable/facebook">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CV_insta"
+        app:cardElevation="6.1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/CV_fb"
+        app:cardCornerRadius="50dp"
+        android:layout_marginLeft="-70dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/instagram">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CV_yt"
+        android:layout_below="@+id/CV_insta"
+        android:layout_marginLeft="35dp"
+        app:cardElevation="6.2dp"
+        android:layout_marginTop="-70dp"
+        app:cardCornerRadius="50dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:padding="3dp"
+            android:layout_height="100dp"
+            android:src="@drawable/youtube">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
